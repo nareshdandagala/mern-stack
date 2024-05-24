@@ -1,0 +1,41 @@
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+
+.box{
+    width: 400px;
+    height: 350px;
+    background-color:purple;
+    text-align: center;
+}
+@media (max-width: 992px)
+{
+    .wrapper{
+        flex-direction: column;
+    }
+    .box{
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+@media (max-width: 768px)
+{
+    .wrapper{
+        flex-direction: column;
+    }
+    .box{
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+@media (max-width: 576px)
+{
+    .wrapper{
+        flex-direction: column;
+    }
+    .box{
+        width: 100%;
+        margin-top: 30px;
+    }
+}

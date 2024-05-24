@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS animation</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            perspective: 700px;
+        }
+        .box_1{
+            border: 2px solid black;
+            height: 100px;
+            width: 100px;
+           justify-content: center;
+           align-items: center;
+           display: flex;
+           font-size: 15px;
+           font-family: cursive;
+           background-color: springgreen;
+        }
+        .box_1:hover{
+            background-color: red;
+           transition-duration: 4s;
+           transform: rotateY(360);
+           transition-timing-function: ease-in-out;
+           transition-property: background-color 5s,transfrom 6s ;
+        }
+        .cube{
+            height: 100px;
+            width: 100px;
+            text-align: center;
+           line-height: 75px;
+            position: relative;
+            transform-style: preserve-3d;
+            animation: rotateCube 5s linear infinite;
+        }
+        .face{
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: rgb(89, 89, 78);
+            color: hotpink;
+            justify-content: center;
+            align-items: center;
+        }
+        .face:nth-child(1){transform: translateZ(50px);}
+        .face:nth-child(2){transform: rotateY(180deg) translateZ(50px);}
+        .face:nth-child(3){transform: rotateX(90deg) translateZ(50px);}
+        .face:nth-child(4){transform: rotateX(-90deg) translateZ(50px);}
+        .face:nth-child(5){transform: rotateX(90deg) translateZ(50px);}
+        .face:nth-child(6){transform: rotateY(-90deg) translateZ(50px);}
+        
+        @keyframes rotateCube {
+            from{transform: rotateX(360deg);}
+            to{transform: rotateX(0deg);}
+        }
+   
+    </style>
+</head>
+<body>
+    <div class="box_1">This is Lyros technologies</div>
+    <div><h2>Full Stack Developer</h2></div>
+    <div class="cube">
+        <div class="face">font</div>
+        <div class="face">back</div>
+        <div class="face">right</div>
+        <div class="face">left</div>
+        <div class="face">top</div>
+        <div class="face">bottom</div>
+    </div>
+</body>
+</html>

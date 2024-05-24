@@ -1,0 +1,29 @@
+body{
+    background-color: darkcyan;
+}
+.add{
+    margin-top: 60px;
+}
+.container{
+    display: grid;
+    row-gap: 70px;
+    grid-template-columns: auto auto auto ;
+    padding: 10px;
+    column-gap: 70px;
+    grid-row-gap: 70px;
+}
+.item{
+    background-color: darkgoldenrod;
+    border: 1px solid rgba(0,0,0,0.8);
+    padding: 20px;
+    height: 100px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2) ,0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: :run;
+    animation-duration: 4s;
+    animation-iteration-count: 5;
+    color: white;
+    border: 5px solid white;
+}
