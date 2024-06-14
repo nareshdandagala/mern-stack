@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: snow;
+}
+
+.card
+{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    line-height: 50px;
+    background-color: mediumslateblue;
+    border: none;
+    box-shadow: 1px 1px 3px 2px grey;
+}
+
+form {
+    display: grid;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right :5px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+padding: 10px 20px;
+background-color: white;
+color: black;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="/css/advancedform.css">
+</head>
+<body>
+    <div class="card">
+        <h2>Registration Form</h2>
+        <form id="registrationform">
+            <div>
+                <input type="text" name="firstname" placeholder="firstname" pattern="^[A-Za-z0-9]{4,16}$" maxlength="16" required>
+                <input type="text" name="lastname" placeholder="lastame"  pattern="^[A-Za-z0-9]{4,16}$" maxlength="16" required>
+            </div>
+            <div>
+                <input type="text" name="username" placeholder="username" pattern="[(a-zA-z\d\!@#\$%\^\&*\)\(+=._-)]{8,16}" minlength="4" maxlength="8" required>
+            </div>
+            <div> 
+                <input type="email" name="email" placeholder="email" pattern="[(a-zA-z\d\!@#\$%\^\&*\)\(+=._-)]{8,16}" required>
+            </div>
+            <div>
+                <input type="password" name="password" placeholder="password" required>
+                <input type="password" name="confirmpassword" placeholder="confirmpassword" required>
+            </div>
+            <div>
+                <input type="date" name="dob" required>
+            </div>
+            <div>
+                <label>gender:</label>
+                <input type="radio" name="gender" value="male" required>male
+                <input type="radio" name="gender" value="female" required>female
+                <input type="radio" name="gender" value="other" required>other
+            </div>
+            <div>
+                <select name="country" required>
+                    <option value="">select country</option>
+                    <option value="">usa</option>
+                    <option value="">uk</option>
+                    <option value="">india</option>
+                </select>
+            </div>
+            <div>
+                <label> intrests</label>
+                <input type="checkbox" name="intrests" value="sports">sports
+                <input type="checkbox" name="intrests" value="sports">drawing
+                <input type="checkbox" name="intrests" value="sports">outing
+                <input type="checkbox" name="intrests" value="sports">music
+            </div>
+            <div>
+                <input type="file" name="profilepicture" accept="image/*">
+                <div>
+                    <textarea name="bio" placeholder="short bio"></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" name="terms" required>i agree to the terms and conditions
+                </div>
+                <div>
+                    <input type="submit" value="submit">
+                    <input type="reset" value="reset">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
